@@ -557,4 +557,4 @@ async def leaderboard(ctx):
 		embed.add_field(name=name.display_name, value=score)
 	await ctx.send(embed=embed)
 
-client.run(os.environ.get('BOT_TOKEN', None))
+bot.run(os.environ.get('BOT_TOKEN', None))
