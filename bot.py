@@ -6,7 +6,7 @@ import os
 import sys
 import discord
 import tbapy
-#from discord.ext import commands
+from discord.ext import commands
 from fuzzywuzzy import fuzz
 
 '''with open("config.json", "r+") as f:
