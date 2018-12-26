@@ -10,3 +10,4 @@ opuslib
 pynacl==1.2.1
 fuzzywuzzy
 tbapy
+python-Levenshtein
