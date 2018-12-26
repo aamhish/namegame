@@ -13,7 +13,7 @@ from fuzzywuzzy import fuzz
 with open("config.json", "r+") as f:
 	config = json.loads(f.read())
 
-tba = tbapy.TBA(config["tba_token"])
+tba = tbapy.TBA(os.environ.get('BOT_TOKEN', None))
 
 logger = logging.getLogger('discord')
 logger.setLevel(logging.DEBUG)
