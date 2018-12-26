@@ -1,5 +1,5 @@
 
-pip3==18.1
+pip==18.1
 git+https://github.com/Rapptz/discord.py@rewrite#egg=discord.py[voice]
 youtube_dl==2018.11.07
 colorlog
