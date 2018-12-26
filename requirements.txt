@@ -8,6 +8,7 @@ configparser==3.5.0
 Cython==0.25.1
 enum34==1.1.6
 flake8==3.5.0
+python-Levenshtein
 idna==2.6
 mccabe==0.6.1
 pathlib==1.0.1
