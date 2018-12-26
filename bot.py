@@ -10,8 +10,6 @@ import tbapy
 from discord.ext import commands
 from fuzzywuzzy import fuzz
 
-with open("config.json", "r+") as f:
-	config = json.loads(f.read())
 
 tba = tbapy.TBA(os.environ.get('TBA', None))
 
