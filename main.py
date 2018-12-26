@@ -4,7 +4,7 @@ import logging
 import traceback
 import os
 import sys
-
+lol
 import discord
 import tbapy
 from discord.ext import commands
