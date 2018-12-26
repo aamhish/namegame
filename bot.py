@@ -21,8 +21,8 @@ handler.setFormatter(logging.Formatter('%(asctime)s:%(levelname)s:%(name)s: %(me
 logger.addHandler(handler)
 
 
-class namebot(commands.Bot):
-
+#class namebot(commands.Bot):
+class namebot():
 	def __init__(self,*args, **kwargs):
 		super().__init__(*args,**kwargs)
 		print("init")
