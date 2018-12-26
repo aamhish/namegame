@@ -4,13 +4,14 @@ import logging
 import traceback
 import os
 import sys
+
 import discord
 import tbapy
 from discord.ext import commands
 from fuzzywuzzy import fuzz
 
-'''with open("config.json", "r+") as f:
-	config = json.loads(f.read())'''
+with open("config.json", "r+") as f:
+	config = json.loads(f.read())
 
 tba = tbapy.TBA(os.environ.get('TBA', None))
 
@@ -21,8 +22,8 @@ handler.setFormatter(logging.Formatter('%(asctime)s:%(levelname)s:%(name)s: %(me
 logger.addHandler(handler)
 
 
-#class namebot(commands.Bot):
-class namebot():
+class namebot(commands.Bot):
+
 	def __init__(self,*args, **kwargs):
 		super().__init__(*args,**kwargs)
 		print("init")
@@ -556,5 +557,4 @@ async def leaderboard(ctx):
 		print(name)
 		embed.add_field(name=name.display_name, value=score)
 	await ctx.send(embed=embed)
-
 bot.run(os.environ.get('BOT_TOKEN', None))
