@@ -26,4 +26,4 @@ virtualenv==15.1.0
 virtualenv-clone==0.2.6
 pytz
 fuzzywuzzy
-yarl<1.2
+yarl
