@@ -558,4 +558,4 @@ async def leaderboard(ctx):
 		embed.add_field(name=name.display_name, value=score)
 	await ctx.send(embed=embed)
 
-bot.run(config["discord_token"])
+client.run(os.environ.get('BOT_TOKEN', None))
